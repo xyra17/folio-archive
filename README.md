@@ -8,7 +8,7 @@
 
 PDF · Word · Markdown · 单文件 HTML
 
-[下载预览版](https://github.com/xyra17/folio-archive/releases) · [开始使用](#开始使用) · [开发指南](docs/guide/development.md) · [反馈问题](https://github.com/xyra17/folio-archive/issues)
+[下载预览版](https://github.com/xyra17/folio-archive/releases) · [导出效果](#导出效果) · [开始使用](#开始使用) · [开发指南](docs/guide/development.md) · [反馈问题](https://github.com/xyra17/folio-archive/issues)
 
 ![平台：macOS Apple Silicon](https://img.shields.io/badge/macOS-Apple_Silicon-24262b)
 [![许可证：MIT](https://img.shields.io/badge/license-MIT-287e75)](LICENSE)
@@ -34,6 +34,67 @@ PDF · Word · Markdown · 单文件 HTML
 
 PDF / Word 提供四种排版模板：清爽阅读、书刊印刷、技术手册、杂志精选。AI 辅助检查可选，默认关闭。
 
+## 导出效果
+
+以下是 **0.4.13 实际生成的文件与打开效果**。PDF、Word 和 Markdown 使用应用内置的《Agent 应用开发手册》；HTML 使用项目自有的阅读版样例《让好内容，随时可读》。示例用于展示中文、标题、引用、代码、表格与图片的保存效果。
+
+### PDF：分页阅读与打印
+
+实际 PDF 的第 3 页，展示代码块、表格和图片。纸张为 A4，使用「清爽阅读」模板。
+
+<p align="center">
+  <a href="docs/assets/export-pdf-page-3.png"><img src="docs/assets/export-pdf-page-3.png" width="580" alt="实际导出的 PDF 第 3 页，含中文正文、TypeScript 代码、表格和图片" /></a>
+</p>
+
+<details>
+<summary>再看一页：正文、引用与图片</summary>
+
+<p align="center">
+  <a href="docs/assets/export-pdf-page-2.png"><img src="docs/assets/export-pdf-page-2.png" width="580" alt="实际导出的 PDF 第 2 页，展示标题层级、正文、引用和图片说明" /></a>
+</p>
+
+</details>
+
+### Word：保留内容，继续编辑
+
+实际 `.docx` 在 **Microsoft Word for Mac** 中打开的界面。标题、正文、代码与表格进入 Word 文档；图中的蓝色换行符是编辑器显示的格式标记。
+
+![Word 中打开实际导出文档，左侧可见分页缩略图，正文保留代码与表格](docs/assets/export-word.png)
+
+### Markdown：放进自己的笔记库
+
+实际 `.md` 在 **Typora** 中的阅读效果，保留标题、代码围栏和 Markdown 表格。样式由阅读器决定，图片保存在同目录的 `assets/` 中，移动资料时需一起保留。
+
+![Typora 打开导出的 Markdown，显示中文正文、语法高亮代码和表格](docs/assets/export-markdown-table.png)
+
+<details>
+<summary>查看 Markdown 文档开头与本地图片</summary>
+
+![Markdown 文档开头，保留来源、获取时间、标题、引用和本地图片](docs/assets/export-markdown.png)
+
+</details>
+
+### HTML：一个文件，浏览器离线阅读
+
+实际导出的单文件 HTML。左侧目录可跳转，顶部支持深色阅读和打印；成功保存的图片内嵌在文件中。
+
+![HTML 离线阅读版，显示文章标题、侧边目录、正文与引用](docs/assets/export-html.png)
+
+<details>
+<summary>查看深色阅读、代码复制与阅读进度</summary>
+
+**深色阅读**
+
+![同一 HTML 文件切换为深色阅读](docs/assets/export-html-dark.png)
+
+**代码与阅读进度**
+
+![HTML 阅读版中的代码块、复制代码按钮、当前章节和顶部阅读进度条](docs/assets/export-html-code.png)
+
+</details>
+
+截图可点击放大。示例中的 `127.0.0.1` 是应用内置演示内容的本机来源地址，无需访问外部网站。
+
 ## 下载与安装
 
 前往 [Releases](https://github.com/xyra17/folio-archive/releases) 下载预览版。
@@ -57,6 +118,24 @@ PDF / Word 提供四种排版模板：清爽阅读、书刊印刷、技术手册
 4. 保存完成后点击「打开」，或从「已保存」查找历史资料。
 
 可以用上方 Anthropic 文章链接体验，也可以点击空资料库中的「试一份示例」，使用应用自带的本机演示内容。
+
+### 操作预览
+
+**1. 粘贴链接，同时选择需要的格式**
+
+以 Anthropic 文章为例，四种格式可一次勾选，保存后统一放入文章文件夹。
+
+![粘贴 Anthropic 文章链接，并同时选择 PDF、Word、Markdown 和 HTML](docs/assets/select-formats.png)
+
+**2. 保存前预览排版**
+
+展开「保存设置」→「文档排版」，预览四套模板。PDF 使用所选版式，Word 保留对应字体与层级。
+
+![排版选择窗口，左侧列出四套模板，右侧展示实际排版样例](docs/assets/layout-preview.png)
+
+**3. 保存完成，直接打开文件**
+
+完成界面见本文开头的[保存结果截图](docs/assets/save-article.png)。也可到「已保存」查找记录、查看详情或重新导出。
 
 ### 选哪种格式？
 

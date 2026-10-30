@@ -36,64 +36,64 @@ PDF / Word 提供四种排版模板：清爽阅读、书刊印刷、技术手册
 
 ## 导出效果
 
-以下是 **0.4.13 实际生成的文件与打开效果**。PDF、Word 和 Markdown 使用应用内置的《Agent 应用开发手册》；HTML 使用项目自有的阅读版样例《让好内容，随时可读》。示例用于展示中文、标题、引用、代码、表格与图片的保存效果。
+以下四种格式均来自 **0.4.13 对同一篇文章的实际导出**：[Anthropic · Effective context engineering for AI agents](https://www.anthropic.com/research/effective-context-engineering-for-ai-agents)。可以对照查看同一份正文、标题与原文插图在不同格式中的效果。
 
 ### PDF：分页阅读与打印
 
-实际 PDF 的第 3 页，展示代码块、表格和图片。纸张为 A4，使用「清爽阅读」模板。
+实际 PDF 共 10 页，纸张为 A4，使用「清爽阅读」模板。下图是首页，保留文章标题、来源域名、正文层级和页码。
 
 <p align="center">
-  <a href="docs/assets/export-pdf-page-3.png"><img src="docs/assets/export-pdf-page-3.png" width="580" alt="实际导出的 PDF 第 3 页，含中文正文、TypeScript 代码、表格和图片" /></a>
+  <a href="docs/assets/anthropic-pdf-page-1.png"><img src="docs/assets/anthropic-pdf-page-1.png" width="580" alt="Anthropic 上下文工程文章导出的 PDF 首页，显示标题、正文与第 1 / 10 页页码" /></a>
 </p>
 
 <details>
-<summary>再看一页：正文、引用与图片</summary>
+<summary>查看第 2 页：原文插图与后续正文</summary>
 
 <p align="center">
-  <a href="docs/assets/export-pdf-page-2.png"><img src="docs/assets/export-pdf-page-2.png" width="580" alt="实际导出的 PDF 第 2 页，展示标题层级、正文、引用和图片说明" /></a>
+  <a href="docs/assets/anthropic-pdf-page-2.png"><img src="docs/assets/anthropic-pdf-page-2.png" width="580" alt="PDF 第 2 页，保留 Prompt engineering vs. context engineering 原文插图、图注与后续正文" /></a>
 </p>
 
 </details>
 
 ### Word：保留内容，继续编辑
 
-实际 `.docx` 在 **Microsoft Word for Mac** 中打开的界面。标题、正文、代码与表格进入 Word 文档；图中的蓝色换行符是编辑器显示的格式标记。
+同一篇文章的 `.docx` 在 **Microsoft Word for Mac** 中打开，可继续编辑标题、正文与图片。左侧可见分页缩略图；图中的蓝色换行符是编辑器显示的格式标记。
 
-![Word 中打开实际导出文档，左侧可见分页缩略图，正文保留代码与表格](docs/assets/export-word.png)
+![Microsoft Word 打开 Anthropic 文章的实际导出文档，显示标题、正文和左侧分页缩略图](docs/assets/anthropic-word.png)
 
 ### Markdown：放进自己的笔记库
 
-实际 `.md` 在 **Typora** 中的阅读效果，保留标题、代码围栏和 Markdown 表格。样式由阅读器决定，图片保存在同目录的 `assets/` 中，移动资料时需一起保留。
+同一篇文章的 `.md` 在 **Typora** 中打开，保留来源链接、获取时间、标题、正文与插图。样式由阅读器决定，图片保存在同目录的 `assets/` 中，移动资料时需一起保留。
 
-![Typora 打开导出的 Markdown，显示中文正文、语法高亮代码和表格](docs/assets/export-markdown-table.png)
+![Typora 打开 Anthropic 文章的 Markdown，显示文章标题、原文链接、获取时间和正文](docs/assets/anthropic-markdown.png)
 
 <details>
-<summary>查看 Markdown 文档开头与本地图片</summary>
+<summary>查看 Markdown 中的原文插图</summary>
 
-![Markdown 文档开头，保留来源、获取时间、标题、引用和本地图片](docs/assets/export-markdown.png)
+![同一份 Markdown 中的上下文工程对比插图，左侧可见本地 assets 图片目录](docs/assets/anthropic-markdown-figure.png)
 
 </details>
 
 ### HTML：一个文件，浏览器离线阅读
 
-实际导出的单文件 HTML。左侧目录可跳转，顶部支持深色阅读和打印；成功保存的图片内嵌在文件中。
+同一篇文章导出的单文件 HTML，直接在 **Safari** 中以本地 `file://` 地址打开。左侧目录可跳转，顶部支持深色阅读和打印；成功保存的图片内嵌在文件中。
 
-![HTML 离线阅读版，显示文章标题、侧边目录、正文与引用](docs/assets/export-html.png)
+![Safari 打开 Anthropic 文章的本地 HTML，显示文章标题、章节目录和正文](docs/assets/anthropic-html.png)
 
 <details>
-<summary>查看深色阅读、代码复制与阅读进度</summary>
+<summary>查看深色阅读、原文插图与阅读进度</summary>
 
 **深色阅读**
 
-![同一 HTML 文件切换为深色阅读](docs/assets/export-html-dark.png)
+![Anthropic 文章的同一 HTML 文件切换为深色阅读](docs/assets/anthropic-html-dark.png)
 
-**代码与阅读进度**
+**原文插图与阅读进度**
 
-![HTML 阅读版中的代码块、复制代码按钮、当前章节和顶部阅读进度条](docs/assets/export-html-code.png)
+![HTML 阅读版保留上下文工程对比插图，左侧显示当前章节，顶部显示阅读进度](docs/assets/anthropic-html-figure.png)
 
 </details>
 
-截图可点击放大。示例中的 `127.0.0.1` 是应用内置演示内容的本机来源地址，无需访问外部网站。
+截图可点击放大。文章与插图版权归 Anthropic 及原作者所有；以上仅展示部分页面的导出效果，第三方内容不属于本项目的 MIT 授权范围。
 
 ## 下载与安装
 
@@ -127,15 +127,15 @@ PDF / Word 提供四种排版模板：清爽阅读、书刊印刷、技术手册
 
 ![粘贴 Anthropic 文章链接，并同时选择 PDF、Word、Markdown 和 HTML](docs/assets/select-formats.png)
 
-**2. 保存前预览排版**
+**2. 保存完成，直接打开文件**
 
-展开「保存设置」→「文档排版」，预览四套模板。PDF 使用所选版式，Word 保留对应字体与层级。
+完成界面见本文开头的[保存结果截图](docs/assets/save-article.png)。点击「打开」查看导出结果，也可到「已保存」查找历史记录。
 
-![排版选择窗口，左侧列出四套模板，右侧展示实际排版样例](docs/assets/layout-preview.png)
+**3. 四种格式与素材保存在同一文件夹**
 
-**3. 保存完成，直接打开文件**
+这篇文章的实际导出目录中，PDF、Word、Markdown、HTML 与 ZIP 资料包使用相同标题；本地图片放在 `assets/`，另附阅读说明和归档报告。
 
-完成界面见本文开头的[保存结果截图](docs/assets/save-article.png)。也可到「已保存」查找记录、查看详情或重新导出。
+![Anthropic 文章的实际导出文件夹，包含 PDF、Word、Markdown、HTML、ZIP、图片目录和归档报告](docs/assets/anthropic-export-files.png)
 
 ### 选哪种格式？
 

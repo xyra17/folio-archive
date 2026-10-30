@@ -1,0 +1,70 @@
+[
+  {
+    "name": "Paul Graham",
+    "url": "https://www.paulgraham.com/makersschedule.html",
+    "minChars": 4500,
+    "required": ["There are two types of schedule", "Y Combinator"]
+  },
+  {
+    "name": "Martin Fowler",
+    "url": "https://martinfowler.com/articles/is-quality-worth-cost.html",
+    "minChars": 10000,
+    "required": [
+      "Internal quality makes it easier to enhance software",
+      "High quality software is cheaper to produce"
+    ],
+    "minImages": 1
+  },
+  {
+    "name": "MDN",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction",
+    "minChars": 5000,
+    "required": [
+      "What you should already know",
+      "JavaScript and the ECMAScript specification",
+      "Getting started with JavaScript"
+    ],
+    "minCodeBlocks": 2
+  },
+  {
+    "name": "React",
+    "url": "https://react.dev/learn/thinking-in-react",
+    "minChars": 9000,
+    "required": [
+      "Step 1: Break the UI into a component hierarchy",
+      "Step 5: Add inverse data flow"
+    ],
+    "minImages": 2,
+    "minCodeBlocks": 10
+  },
+  {
+    "name": "GitHub Blog",
+    "url": "https://github.blog/engineering/architecture-optimization/the-technology-behind-githubs-new-code-search/",
+    "minChars": 10000,
+    "required": ["Blackbird", "index"],
+    "minImages": 2,
+    "minCodeBlocks": 2
+  },
+  {
+    "name": "阮一峰",
+    "url": "https://www.ruanyifeng.com/blog/2015/07/flex-grammar.html",
+    "minChars": 3500,
+    "required": ["一、Flex 布局是什么", "三、容器的属性", "align-self"],
+    "minImages": 15,
+    "minCodeBlocks": 15
+  },
+  {
+    "name": "少数派",
+    "url": "https://sspai.com/post/36610",
+    "minChars": 2500,
+    "required": ["Markdown", "了解基本 Markdown 语法"],
+    "minCodeBlocks": 1
+  },
+  {
+    "name": "博客园",
+    "url": "https://www.cnblogs.com/konglxblog/p/16995183.html",
+    "minChars": 3000,
+    "required": ["flex", "弹性"],
+    "minCodeBlocks": 10
+  }
+]

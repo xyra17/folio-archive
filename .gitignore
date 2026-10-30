@@ -1,0 +1,28 @@
+node_modules/
+dist/
+dist-electron/
+release/
+.test-data/
+tmp/
+.DS_Store
+*.log
+.env*
+!.env.example
+
+.test-output/
+
+# Personal databases, browser sessions and credentials
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Public docs are curated separately from local implementation history.
+/docs/*
+!/docs/guide/
+!/docs/assets/
+!/docs/examples/

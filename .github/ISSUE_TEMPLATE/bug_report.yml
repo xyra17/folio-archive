@@ -1,0 +1,31 @@
+name: 问题反馈
+description: 报告保存、排版或应用使用中可复现的问题
+body:
+  - type: markdown
+    attributes:
+      value: 请使用公开示例复现，不要提交密钥、Cookie、私密链接或全文归档。漏洞请按 SECURITY.md 私密报告。
+  - type: input
+    id: environment
+    attributes:
+      label: 版本与环境
+      placeholder: 拾页版本 / macOS 版本 / 芯片
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 如涉及某个页面，请提供可公开访问的示例链接。
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 预期与实际结果
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: 截图与问题代码
+      description: 可选。请先移除个人信息。

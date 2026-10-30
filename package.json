@@ -73,6 +73,7 @@
     "files": [
       "dist/**/*",
       "dist-electron/**/*",
+      "LICENSE",
       "package.json"
     ],
     "asar": true,
